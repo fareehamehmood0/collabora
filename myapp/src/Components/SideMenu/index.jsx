@@ -4,7 +4,7 @@ import {
   ProfileOutlined,
   UsergroupAddOutlined,
   UserAddOutlined,
-  ShopOutlined,
+  CalendarOutlined,
   MailOutlined,
   LogoutOutlined,
 } from "@ant-design/icons";
@@ -16,6 +16,8 @@ function SideMenu() {
   return (
     <div className="SideMenu">
       <Menu
+       className="SideMenuVertical"
+      mode="vertical"
       onClick={(item)=>{
         //items.key
         navigate(item.key)
@@ -44,7 +46,7 @@ function SideMenu() {
           {
             label: "Events",
             key: "/events",
-            icon: <HddOutlined />,
+            icon: <CalendarOutlined />,
           },
           {
             label: "ContactUs",
